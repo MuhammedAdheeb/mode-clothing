@@ -1,0 +1,24 @@
+.tickerCell {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border-right: 3px solid black;
+
+    > .tickerCellValue {
+        font-size: 3rem;
+        font-weight: 600;
+    }
+    
+    > .tickerCellLabel {
+        font-size: small;
+    }
+}
+@media screen and (max-width: 768px) {
+    .tickerCell {
+
+        > .tickerCellValue {
+            font-size: 2rem;
+        }
+    }
+}

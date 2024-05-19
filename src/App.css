@@ -1,38 +1,154 @@
-.App {
-  text-align: center;
+@font-face {
+    font-family: 'mode-font';
+    src: url('../public/Inter-VariableFont_slnt,wght.ttf');
+    font-weight: 700;
+    font-style: normal;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+*{
+    font-family: mode-font;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.home-body{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.navigation{
+    padding: 0px 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: black;
+    color: white;
+    min-height: 70px;
 }
 
-.App-link {
-  color: #61dafb;
+.navigation img{
+    height: 50px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.navigation .mode-title p{
+    font-size: 24px;
+}
+.coming-soon-banner {
+    width: auto;
+    font-weight: lighter;
+    color: rgb(225, 6, 6);
+    padding: 10px 30px  ;
+    background: #B5B9C1;
+    position: relative;
+    margin: 0;
+}
+
+.coming-soon-banner .right-to-left-moving-text {
+    text-align: center;
+    animation: RightToLeft 10s infinite linear;
+}
+
+@keyframes RightToLeft {
+    from{
+        transform: translateX(-95%);
+    }
+    to {
+        transform: translateX(0%);
+    }
+}
+
+.text-and-countdown{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 50px;
+}
+
+.text-and-countdown .countdown-text{
+    width: 50%;
+}
+
+.text-and-countdown .countdown-text p{
+    font-size: 54px;
+}
+
+.text-and-countdown .countdown-timer{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-and-countdown .countdown-timer p {
+    font-size: 2rem;
+    margin: 0;
+}
+
+.social-media-link{
+    padding-left: 50px;
+    text-decoration: none;
+    margin-bottom: 100px;
+}
+
+.social-media-link a{
+    display: flex;
+    width: min-content;
+    align-items: center;
+    color: black;
+    padding: 10px 20px;
+    text-decoration: none;
+    background-color: #D9D9D9;
+    border-radius: 10px;
+    height: 20px;
+}
+.social-media-link .icon {
+    margin-right: 8px;
+    font-size: 24px; /* Adjust the size as needed */
+    font-weight: bold;
+    /* Add more styles for the icon if needed */
+}
+
+
+.text-and-hashtags{
+    width: 80%;
+    padding-left: 50px;
+    margin: 50px 0;
+}
+
+.text-and-hashtags p{
+
+}
+
+.footer{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 50px;
+    margin-top: auto;
+    background-color: black;
+    color: white;
+}
+
+.footer p{
+    margin: 0;
+}
+
+.footer .footer-right-half{
+    align-items: center;
+    display: flex;
+    /*padding: 0 10px;*/
+    padding-right: 50px;
+    width: 50%;
+    justify-content: space-between;
+    border-right: #666666 3px solid;
+}
+
+.footer .footer-left-half{
+    align-items: center;
+    width: 50%;
+    padding-left: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer .footer-left-half img {
+    height: 50px;
 }
