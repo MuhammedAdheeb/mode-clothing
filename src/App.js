@@ -1,9 +1,7 @@
-import logo from './logo.svg';
 import './App.css';
-import {Route, Routes} from "react-router-dom";
 import React from "react";
 import Logo from "./mode-logo.png"
-import {Ticker} from "./countdown/components/Ticker/Ticker";
+import {Ticker} from "./countdown/components/Ticker";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faInstagram} from "@fortawesome/free-brands-svg-icons/faInstagram";
 
@@ -20,7 +18,7 @@ function App() {
                       <p>mode movement</p>
                   </div>
                   <div>
-                      <img src={Logo}/>
+                      <img src={Logo} alt="Logo"/>
                   </div>
               </div>
               <div className="coming-soon-banner">
@@ -65,7 +63,7 @@ function App() {
                       <p>mode movement</p>
                   </div>
                   <div className="footer-left-half">
-                      <img src={Logo}/>
+                      <img src={Logo} alt="Logo"/>
                   </div>
               </div>
           </div>

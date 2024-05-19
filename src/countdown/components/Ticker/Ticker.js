@@ -1,5 +1,4 @@
 import { TickerCell } from '../TickerCell';
-import { TickerSeparator } from '../TickerSeparator';
 import { useTicker } from '../../hooks';
 
 import style from './Ticker.module.scss';
