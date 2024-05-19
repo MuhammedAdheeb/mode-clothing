@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "devDependencies": {
-    "@babel/plugin-proposal-private-property-in-object": "version_number"
+    "@babel/plugin-proposal-private-property-in-object": "7.21.11"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.5.2",
